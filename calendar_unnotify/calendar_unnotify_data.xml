@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+    
+         <!-- Evitar notificaciones -->
+        <record id="calendar.unnotify" model="ir.config_parameter">
+            <field name="key">calendar.block_mail</field>
+            <field name="value">True</field>
+	    <field name="auto_delete" eval="True"/>
+        </record>
+    </data>
+</openerp>
