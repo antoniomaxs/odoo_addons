@@ -24,12 +24,12 @@ class account_analytic_account(models.Model):
     _inherit = ["account.analytic.account"]
     
     product = fields.Many2one('product.template', string='Producto')
-    product_owner = fields.Char(string='Propiertario', store=False, compute='_get_product_owner')
-    
-    @api.one
-    @api.depends('product')
-    def _get_product_owner(self):
-       self.product_owner = self.product.owner.name
+    product_owner = fields.Many2one('res.partner', string='Propietario')
+
+    @api.onchange('product')
+    def _onchange_product(self):
+       if not self.product_owner:
+           self.product_owner = self.product.owner
 
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
 

@@ -58,7 +58,7 @@ class recibos(models.Model):
     #_defaults = {
     #    'cobrado': 0,
     #}
-    
+
     #API NUEVA - odoo8
     concepto = fields.Char(string='Concepto', required=True)
     fecha = fields.Date(string='Fecha', required=True)
