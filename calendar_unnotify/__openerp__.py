@@ -4,16 +4,17 @@
 #################################################################
 
 {
-    'name' : 'Evitar notificaciones Calendario',
+    'name' : 'Evitar notificaciones calendario',
     'version': '1.0',
     'depends': [
-        'base'
+        'base', 'base_setup'
     ],
     'author': 'Ingeniería Cloud',
     'website':'http://ingenieriacloud.com',
     'category': 'Calendario',
     'description': """
-Evitar notificaciones del calendario. Establece la variable de sistema calendar.block_mail a True
+Evitar notificaciones del calendario. Establece la variable de sistema calendar.block_mail a True.
+Además añade una opción en el menú Configuración-> Configuración General para activar/desactivar las notificaciones
     """,
     'website': '',
     'data': [
