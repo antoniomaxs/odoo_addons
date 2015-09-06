@@ -4,15 +4,9 @@
 #################################################################
 
 # Importaciones
-import pdb
 import sys
-import time
-import logging
 
-from datetime import date, datetime, timedelta
 from openerp import models, fields, api, _
-from duplicity.tempdir import default
-from paramiko.packet import compute_hmac
 
 # Configuramos
 reload(sys)
