@@ -61,6 +61,7 @@
 					<field name='concepto' />
 					<field name='fecha' />
 					<field name='account_id' />
+                    <field name='account_product' />
 					<field name='importe' />
 					<field name='cobrado' />
 					<field name='pagado' />
@@ -81,7 +82,8 @@
 					<filter string='No Pagado' name='unpay' domain="[('pagado', '=', False)]" />
 					
 					<group expand="1" string="Group by">
-						<filter name='group_by_product' string='Producto' context="{'group_by':'product_id'}" />
+						<filter name='group_by_contract' string='Contrato' context="{'group_by':'account_id'}" />
+                        <filter name='group_by_product' string='Product' context="{'group_by':'account_product'}" />
 					</group>
 				</search>
 			</field>

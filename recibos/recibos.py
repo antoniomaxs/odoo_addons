@@ -63,7 +63,7 @@ class recibos(models.Model):
     account_id = fields.Many2one('account.analytic.account', string='Contrato')
 
     pendiente = fields.Float(string='Importe Pendiente de Cobrar', store=False, compute='_get_importe_pendiente')
-    account_product = fields.Char(string='Vivienda', store=False, compute='_get_account_product')
+    account_product = fields.Char(string='Vivienda', store=True, compute='_get_account_product')
     account_product_owner = fields.Char(string='Propietario', store=False, compute='_get_account_product_owner')
     account_product_tenant = fields.Char(string='Inquilino', store=False, compute='_get_account_product_tenant')
 
