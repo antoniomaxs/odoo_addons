@@ -10,6 +10,7 @@
                     <field name="name" filter_domain="['|', ('name','ilike',self), ('code','ilike',self)]" string="Analytic Account"/>
                     <field name="date"/>
                     <field name="product"/>
+                    <field name="product_owner"/>
                     <field name="partner_id" operator="child_of"/>
                     <field name="manager_id"/>
                     <field name="parent_id"/>

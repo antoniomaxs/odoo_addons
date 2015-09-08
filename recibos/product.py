@@ -35,11 +35,11 @@ class product_template(models.Model):
         count = self.env['account.analytic.account'].search_count(domain)
         self.accounts_count = count
     
-    def action_view_account(self, cr, uid, ids, context=None):
-        result = self.pool['ir.model.data'].xmlid_to_res_id(cr, uid, 'account.view_account_analytic_account_list', raise_if_not_found=True)
-        result = self.pool['ir.actions.act_window'].read(cr, uid, [result], context=context)[0]
-        result['domain'] = "[('product','in',[" + ','.join(map(str, ids)) + "])]"
-        return result
+    #def action_view_account(self, cr, uid, ids, context=None):
+    #    result = self.pool['ir.model.data'].xmlid_to_res_id(cr, uid, 'account.view_account_analytic_account_list', raise_if_not_found=True)
+    #    result = self.pool['ir.actions.act_window'].read(cr, uid, [result], context=context)[0]
+    #    result['domain'] = "[('product','in',[" + ','.join(map(str, ids)) + "])]"
+    #    return result
     
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
 
