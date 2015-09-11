@@ -195,3 +195,13 @@ function recalculeDataSuelo(obj){
     }
 }
 
+function showProduct(url){
+    if(typeof data_total !== 'undefined'){
+        $('#urlProduct').attr('href', url);
+        $('#totalModalProduct').html('"' + Math.ceil(data_total.toFixed(2)) + '"');
+        $('#showProductModal').modal('show');
+    }else{
+        alert("Debe calcular los metros de pintura, antes de ir al producto!");
+    }
+}
+

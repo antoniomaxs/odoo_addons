@@ -4,12 +4,12 @@
 #################################################################
 
 {
-    'name' : 'Calculator Website Assets',
+    'name' : 'Prosumer Calculator Website Assets',
     'version': '1.0',
     'depends': [],
     'author': 'Ingeniería Cloud',
     'website':'http://ingenieriacloud.com',
-    'category': 'Calculadoras Web',
+    'category': 'Ingeniería Cloud',
     'description': """
 Añade los Assets(JS y CSS) necesarios para el funcionamiento de las calculadoras de PROSUMER en el WEBSITE    """,
     'website': '',
